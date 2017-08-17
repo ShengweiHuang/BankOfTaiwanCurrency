@@ -9,7 +9,8 @@ shinyUI(fluidPage(
     ),
     mainPanel(
       h3(textOutput("outputType")),
-      plotlyOutput("mainPlot", width = "100%", height = 800)
+      plotlyOutput("mainPlot", width = 1200, height = 1000),
+      tableOutput("mainTable")
     )
   )
 ))
